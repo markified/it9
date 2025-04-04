@@ -45,7 +45,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <!-- Product Card -->
                     <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                        <img src="https://via.placeholder.com/300" alt="Product Image" class="w-full h-48 object-cover">
+                        <img src="/public/jas.jpg" alt="Product Image" class="w-full h-48 object-cover">
                         <div class="p-4">
                             <h2 class="text-lg font-bold text-gray-800">Product Name</h2>
                             <p class="text-gray-600 mt-2">This is a short description of the product.</p>
