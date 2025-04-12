@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\File;
 use App\Http\Controllers\MonitoringController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SupplierController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -13,10 +14,7 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
-;
-Route::get('/suppliers', function () {
-    return view('suppliers');
-});
+Route::get('/suppliers', [SupplierController::class, 'index'])->name('suppliers.index');
 Route::get('/low-stock', function () {
     return view('low-stock');
 });
