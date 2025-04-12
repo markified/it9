@@ -3,20 +3,17 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\File;
 use App\Http\Controllers\MonitoringController;
+use App\Http\Controllers\ProductController;
 
 Route::get('/', function () {
     return view('welcome');
 });
-
 Route::get('/welcome', function () {
     return view('welcome');
 });
-Route::get('/about', function () {
-    return view('about');
-});
-Route::get('/products', function () {
-    return view('products');
-});
+
+Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+;
 Route::get('/suppliers', function () {
     return view('suppliers');
 });

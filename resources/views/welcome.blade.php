@@ -21,42 +21,35 @@
     </style>
 </head>
 <body>
-    <div class="p-6">
+    <div class="h-screen p-6">
         <div class="mb-6 text-center">
-            <img src="resources\views\image\logo.png" class="mx-auto w-32 h-auto">
+            <img src="{{ asset('images/logo.png') }}" class="mx-auto w-32 h-auto">
         </div>
 
         <!-- Header -->
         <div class="mb-6">
             <h1 class="text-3xl font-bold">Welcome</h1>
-            <p class="text-gray-400">admin</p>
-        
         </div>
 
         <!-- Statistics Cards -->
         <div class="grid grid-cols-4 gap-4 mb-6">
             <div class="card p-4 rounded-lg text-center shadow">
                 <p class="text-lg font-bold">Total Users</p>
-                
             </div>
-            <div class="card p-4 rounded-lg text-center shadow cursor-pointer" onclick="window.location.href='products.blade.php'">
+            <a href="{{ route('products.index') }}" class="card p-4 rounded-lg text-center shadow block">
                 <p class="text-lg font-bold">Products</p>
-            </div>
-            
+            </a>
             <div class="card p-4 rounded-lg text-center shadow">
                 <p class="text-lg font-bold">Active Suppliers</p>
-                
             </div>
             <div class="card p-4 rounded-lg text-center shadow">
                 <p class="text-lg font-bold">Low Stock Items</p>
-                
             </div>
         </div>
 
         <!-- Today's Sales -->
         <div class="card p-4 rounded-lg text-center shadow mb-6">
             <p class="text-lg font-bold">Today's Sales</p>
-            
         </div>
 
         <!-- Recent Activities and Low Stock Alert -->
