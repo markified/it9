@@ -5,95 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+        }
+        .card {
+            background-color: #1e293b;
+            color: #ffffff; 
+        }
+        .table-header {
+            background-color: #0f2027;
+            color: #ffffff; 
+        }
+    </style>
 </head>
-<body class="bg-gray-100">
-    <div class="flex h-screen">
-        <!-- Sidebar -->
-        <div class="w-64 bg-gray-800 text-white flex flex-col">
-            <div class="p-4 text-center font-bold text-xl border-b border-gray-700">
-                Dashboard
-            </div>
-            <nav class="flex-1 p-4">
-                <ul>
-                    <li class="mb-4">
-                        <a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Home</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="{{ url('/products') }}" class="block py-2 px-4 rounded hover:bg-gray-700">Products</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="{{ url('/suppliers') }}" class="block py-2 px-4 rounded hover:bg-gray-700">Suppliers</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="{{ url('/low-stock') }}" class="block py-2 px-4 rounded hover:bg-gray-700">Low Stock</a>
-                    </li>
-                    <li class="mb-4">
-                        <a href="{{ url('/purchase-orders') }}" class="block py-2 px-4 rounded hover:bg-gray-700">Purchase Orders</a>
-                    </li>
-                </ul>
-            </nav>
+<body>
+    <div class="p-6">
+        <div class="mb-6 text-center">
+            <img src="resources\views\image\logo.png" class="mx-auto w-32 h-auto">
         </div>
-        <!-- Main Content -->
-        <div class="flex-1 p-6">
-            <div class="text-center mb-10">
-                <h1 class="text-4xl font-bold text-gray-800">Welcome to the Dashboard</h1>
-                <p class="text-gray-600 mt-2">Manage your products, suppliers, and categories</p>
+
+        <!-- Header -->
+        <div class="mb-6">
+            <h1 class="text-3xl font-bold">Welcome</h1>
+            <p class="text-gray-400">admin</p>
+        
+        </div>
+
+        <!-- Statistics Cards -->
+        <div class="grid grid-cols-4 gap-4 mb-6">
+            <div class="card p-4 rounded-lg text-center shadow">
+                <p class="text-lg font-bold">Total Users</p>
+                
             </div>
-            <!-- Products Section -->
-            <div class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Products</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- Product Card -->
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                        <img src="/public/jas.jpg" alt="Product Image" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h2 class="text-lg font-bold text-gray-800">Product Name</h2>
-                            <p class="text-gray-600 mt-2">This is a short description of the product.</p>
-                            <div class="mt-4 flex justify-between items-center">
-                                <span class="text-xl font-bold text-gray-800">$99.99</span>
-                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Edit</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Repeat Product Card -->
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                        <img src="https://via.placeholder.com/300" alt="Product Image" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h2 class="text-lg font-bold text-gray-800">Product Name</h2>
-                            <p class="text-gray-600 mt-2">This is a short description of the product.</p>
-                            <div class="mt-4 flex justify-between items-center">
-                                <span class="text-xl font-bold text-gray-800">$79.99</span>
-                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Edit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="card p-4 rounded-lg text-center shadow cursor-pointer" onclick="window.location.href='products.blade.php'">
+                <p class="text-lg font-bold">Products</p>
             </div>
-            <!-- Categories Section -->
-            <div class="mb-8">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Categories</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- Category Card -->
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                        <div class="p-4">
-                            <h2 class="text-lg font-bold text-gray-800">Category Name</h2>
-                            <p class="text-gray-600 mt-2">This is a short description of the category.</p>
-                            <div class="mt-4 flex justify-between items-center">
-                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Edit</button>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Repeat Category Card -->
-                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
-                        <div class="p-4">
-                            <h2 class="text-lg font-bold text-gray-800">Category Name</h2>
-                            <p class="text-gray-600 mt-2">This is a short description of the category.</p>
-                            <div class="mt-4 flex justify-between items-center">
-                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Edit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            
+            <div class="card p-4 rounded-lg text-center shadow">
+                <p class="text-lg font-bold">Active Suppliers</p>
+                
+            </div>
+            <div class="card p-4 rounded-lg text-center shadow">
+                <p class="text-lg font-bold">Low Stock Items</p>
+                
+            </div>
+        </div>
+
+        <!-- Today's Sales -->
+        <div class="card p-4 rounded-lg text-center shadow mb-6">
+            <p class="text-lg font-bold">Today's Sales</p>
+            
+        </div>
+
+        <!-- Recent Activities and Low Stock Alert -->
+        <div class="grid grid-cols-2 gap-4">
+            <!-- Recent Activities -->
+            <div class="card p-4 rounded-lg shadow">
+                <h2 class="text-xl font-bold mb-4">Recent Activities</h2>
+                <table class="w-full text-left">
+                    <thead class="table-header">
+                        <tr>
+                            <th class="py-2">Date/Time</th>
+                            <th class="py-2">Type</th>
+                            <th class="py-2">User</th>
+                            <th class="py-2">Product</th>
+                            <th class="py-2">Quantity</th>
+                        </tr>
+                    </thead>
+                    
+                </table>
+            </div>
+
+            <!-- Low Stock Alert -->
+            <div class="card p-4 rounded-lg shadow">
+                <h2 class="text-xl font-bold mb-4">Low Stock Alert</h2>
+                <table class="w-full text-left">
+                    <thead class="table-header">
+                        <tr>
+                            <th class="py-2">Product</th>
+                            <th class="py-2">Current Stock</th>
+                            <th class="py-2">Status</th>
+                        </tr>
+                    </thead>
+                   
+                </table>
             </div>
         </div>
     </div>
