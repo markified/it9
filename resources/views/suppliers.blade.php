@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-    <div class="p-6">
+    <div class="h-screen p-6">
         <div class="mb-6 text-center">
             <img src="{{ asset('images/logo.png') }}" class="mx-auto w-32 h-auto">
         </div>
