@@ -16,7 +16,7 @@
         }
         .table-header {
             background-color: #0f2027;
-            color: #ffffff; 
+            color: #ffffff;  
         }
     </style>
     <script>
@@ -45,7 +45,7 @@
                             <a href="{{ url('/') }}" class="block py-2 px-4 rounded hover:bg-gray-700">Dashboard</a>
                         </li>
                         <li class="mb-4">
-                            <a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Products</a>
+                            <a href="{{ url('/products') }}" class="block py-2 px-4 rounded hover:bg-gray-700">Products</a>
                         </li>
                         <li class="mb-4">
                             <a href="{{ url('/suppliers') }}" class="block py-2 px-4 rounded hover:bg-gray-700">Suppliers</a>
@@ -85,14 +85,14 @@
                         <div id="processors" class="category">
                             <h2 class="text-2xl font-bold text-gray-800 mb-4">Processors</h2>
                             <table class="min-w-full bg-white border border-gray-200">
-                                <thead>
+                                <thead class="table-header">
                                     <tr>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">ID</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Name</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Description</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Price</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Supplier</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Actions</th>
+                                        <th class="px-4 py-2 border-b text-left font-bold">ID</th>
+                                        <th class="px-4 py-2 border-b text-left font-bold">Name</th>
+                                        <th class="px-4 py-2 border-b text-left font-bold">Description</th>
+                                        <th class="px-4 py-2 border-b text-left font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left font-bold">Supplier</th>
+                                        <th class="px-4 py-2 border-b text-left font-bold">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -113,14 +113,14 @@
                         <div id="graphics-cards" class="category hidden">
                             <h2 class="text-2xl font-bold text-gray-800 mb-4">Graphics Cards</h2>
                             <table class="min-w-full bg-white border border-gray-200">
-                                <thead>
+                                <thead class="table-header">
                                     <tr>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">ID</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Name</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Description</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Price</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Supplier</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Actions</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">ID</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -141,14 +141,14 @@
                         <div id="storage" class="category hidden">
                             <h2 class="text-2xl font-bold text-gray-800 mb-4">Storage</h2>
                             <table class="min-w-full bg-white border border-gray-200">
-                                <thead>
+                                <thead class="table-header">
                                     <tr>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">ID</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Name</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Description</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Price</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Supplier</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Actions</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">ID</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -169,14 +169,14 @@
                         <div id="motherboard" class="category hidden">
                             <h2 class="text-2xl font-bold text-gray-800 mb-4">Motherboard</h2>
                             <table class="min-w-full bg-white border border-gray-200">
-                                <thead>
+                                <thead class="table-header">
                                     <tr>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">ID</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Name</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Description</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Price</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Supplier</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Actions</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">ID</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -197,14 +197,14 @@
                         <div id="ram" class="category hidden">
                             <h2 class="text-2xl font-bold text-gray-800 mb-4">RAM</h2>
                             <table class="min-w-full bg-white border border-gray-200">
-                                <thead>
+                                <thead class="table-header">
                                     <tr>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">ID</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Name</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Description</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Price</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Supplier</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Actions</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">ID</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -225,14 +225,14 @@
                         <div id="power-supply" class="category hidden">
                             <h2 class="text-2xl font-bold text-gray-800 mb-4">Power Supply</h2>
                             <table class="min-w-full bg-white border border-gray-200">
-                                <thead>
+                                <thead class="table-header">
                                     <tr>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">ID</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Name</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Description</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Price</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Supplier</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Actions</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">ID</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -253,14 +253,14 @@
                         <div id="fans" class="category hidden">
                             <h2 class="text-2xl font-bold text-gray-800 mb-4">Fans</h2>
                             <table class="min-w-full bg-white border border-gray-200">
-                                <thead>
+                                <thead class="table-header">
                                     <tr>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">ID</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Name</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Description</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Price</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Supplier</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Actions</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">ID</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -281,14 +281,14 @@
                         <div id="monitors" class="category hidden">
                             <h2 class="text-2xl font-bold text-gray-800 mb-4">Monitors</h2>
                             <table class="min-w-full bg-white border border-gray-200">
-                                <thead>
+                                <thead class="table-header">
                                     <tr>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">ID</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Name</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Description</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Price</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Supplier</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Actions</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">ID</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -309,14 +309,14 @@
                         <div id="case" class="category hidden">
                             <h2 class="text-2xl font-bold text-gray-800 mb-4">Case</h2>
                             <table class="min-w-full bg-white border border-gray-200">
-                                <thead>
+                                <thead class="table-header">
                                     <tr>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">ID</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Name</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Description</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Price</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Supplier</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Actions</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">ID</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -337,14 +337,14 @@
                         <div id="mouse-keyboards" class="category hidden">
                             <h2 class="text-2xl font-bold text-gray-800 mb-4">Mouse and Keyboards</h2>
                             <table class="min-w-full bg-white border border-gray-200">
-                                <thead>
+                                <thead class="table-header">
                                     <tr>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">ID</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Name</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Description</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Price</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Supplier</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Actions</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">ID</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -365,14 +365,14 @@
                         <div id="others" class="category hidden">
                             <h2 class="text-2xl font-bold text-gray-800 mb-4">Others</h2>
                             <table class="min-w-full bg-white border border-gray-200">
-                                <thead>
+                                <thead class="table-header">
                                     <tr>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">ID</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Name</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Description</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Price</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Supplier</th>
-                                        <th class="px-4 py-2 border-b text-left text-gray-800 font-bold">Actions</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">ID</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -390,10 +390,3 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>

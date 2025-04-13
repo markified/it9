@@ -42,9 +42,9 @@
             <a href="{{ route('suppliers.index') }}" class="card p-4 rounded-lg text-center shadow block">
                 <p class="text-lg font-bold">Active Suppliers</p>
             </a>
-            <div class="card p-4 rounded-lg text-center shadow">
+            <a href="{{ route('low-stock.index') }}" class="card p-4 rounded-lg text-center shadow block">
                 <p class="text-lg font-bold">Low Stock Items</p>
-            </div>
+            </a>
         </div>
 
         <!-- Today's Sales -->
