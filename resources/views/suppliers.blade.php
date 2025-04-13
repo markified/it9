@@ -21,11 +21,11 @@
     </style>
 </head>
 <body>
-    <div class="h-screen p-6">
+    <div class="h-screen ">
         <!-- Sidebar and Main Content -->
         <div class="flex">
             <!-- Sidebar -->
-            <div class="w-64 bg-gray-800 text-white flex flex-col">
+            <div class="w-64 bg-gray-800 text-white flex flex-col h-screen">
                 <div class="p-4 text-center font-bold text-xl border-b border-gray-700">
                     Suppliers
                 </div>
