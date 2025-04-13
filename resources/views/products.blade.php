@@ -92,6 +92,7 @@
                                         <th class="px-4 py-2 border-b text-left font-bold">Name</th>
                                         <th class="px-4 py-2 border-b text-left font-bold">Description</th>
                                         <th class="px-4 py-2 border-b text-left font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left font-bold">Quantity</th>
                                         <th class="px-4 py-2 border-b text-left font-bold">Supplier</th>
                                         <th class="px-4 py-2 border-b text-left font-bold">Actions</th>
                                     </tr>
@@ -102,6 +103,7 @@
                                         <td class="px-4 py-2 border-b text-gray-700">Intel Core i9</td>
                                         <td class="px-4 py-2 border-b text-gray-700">12 Cores, 24 Threads</td>
                                         <td class="px-4 py-2 border-b text-gray-700">$499.99</td>
+                                        <td class="px-4 py-2 border-b text-gray-700">50</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Supplier A</td>
                                         <td class="px-4 py-2 border-b">
                                             <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
@@ -123,6 +125,7 @@
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Quantity</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
@@ -133,6 +136,7 @@
                                         <td class="px-4 py-2 border-b text-gray-700">NVIDIA RTX 4090</td>
                                         <td class="px-4 py-2 border-b text-gray-700">24GB GDDR6X</td>
                                         <td class="px-4 py-2 border-b text-gray-700">$1599.99</td>
+                                        <td class="px-4 py-2 border-b text-gray-700">20</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Supplier B</td>
                                         <td class="px-4 py-2 border-b">
                                             <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
@@ -154,6 +158,7 @@
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Quantity</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
@@ -164,6 +169,7 @@
                                         <td class="px-4 py-2 border-b text-gray-700">Samsung 980 Pro</td>
                                         <td class="px-4 py-2 border-b text-gray-700">2TB NVMe SSD</td>
                                         <td class="px-4 py-2 border-b text-gray-700">$249.99</td>
+                                        <td class="px-4 py-2 border-b text-gray-700">30</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Supplier C</td>
                                         <td class="px-4 py-2 border-b">
                                             <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
@@ -185,6 +191,7 @@
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Quantity</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
@@ -195,6 +202,7 @@
                                         <td class="px-4 py-2 border-b text-gray-700">ASUS ROG Maximus XIII</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Intel Z590 Chipset</td>
                                         <td class="px-4 py-2 border-b text-gray-700">$399.99</td>
+                                        <td class="px-4 py-2 border-b text-gray-700">15</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Supplier D</td>
                                         <td class="px-4 py-2 border-b">
                                             <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
@@ -216,6 +224,7 @@
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Quantity</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
@@ -226,6 +235,7 @@
                                         <td class="px-4 py-2 border-b text-gray-700">Corsair Vengeance LPX</td>
                                         <td class="px-4 py-2 border-b text-gray-700">16GB DDR4 3200MHz</td>
                                         <td class="px-4 py-2 border-b text-gray-700">$89.99</td>
+                                        <td class="px-4 py-2 border-b text-gray-700">40</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Supplier E</td>
                                         <td class="px-4 py-2 border-b">
                                             <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
@@ -247,6 +257,7 @@
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Quantity</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
@@ -257,6 +268,7 @@
                                         <td class="px-4 py-2 border-b text-gray-700">EVGA SuperNOVA 850 G5</td>
                                         <td class="px-4 py-2 border-b text-gray-700">850W Fully Modular</td>
                                         <td class="px-4 py-2 border-b text-gray-700">$139.99</td>
+                                        <td class="px-4 py-2 border-b text-gray-700">25</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Supplier F</td>
                                         <td class="px-4 py-2 border-b">
                                             <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
@@ -278,6 +290,7 @@
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Quantity</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
@@ -288,6 +301,7 @@
                                         <td class="px-4 py-2 border-b text-gray-700">Noctua NF-A12x25</td>
                                         <td class="px-4 py-2 border-b text-gray-700">120mm Premium Fan</td>
                                         <td class="px-4 py-2 border-b text-gray-700">$29.99</td>
+                                        <td class="px-4 py-2 border-b text-gray-700">60</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Supplier G</td>
                                         <td class="px-4 py-2 border-b">
                                             <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
@@ -309,6 +323,7 @@
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Quantity</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
@@ -319,6 +334,7 @@
                                         <td class="px-4 py-2 border-b text-gray-700">Dell UltraSharp U2723QE</td>
                                         <td class="px-4 py-2 border-b text-gray-700">27" 4K UHD Monitor</td>
                                         <td class="px-4 py-2 border-b text-gray-700">$699.99</td>
+                                        <td class="px-4 py-2 border-b text-gray-700">10</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Supplier H</td>
                                         <td class="px-4 py-2 border-b">
                                             <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
@@ -340,6 +356,7 @@
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Quantity</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
@@ -350,6 +367,7 @@
                                         <td class="px-4 py-2 border-b text-gray-700">NZXT H510</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Mid-Tower ATX Case</td>
                                         <td class="px-4 py-2 border-b text-gray-700">$79.99</td>
+                                        <td class="px-4 py-2 border-b text-gray-700">35</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Supplier I</td>
                                         <td class="px-4 py-2 border-b">
                                             <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
@@ -371,6 +389,7 @@
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Quantity</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
@@ -381,6 +400,7 @@
                                         <td class="px-4 py-2 border-b text-gray-700">Logitech MX Master 3</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Wireless Mouse</td>
                                         <td class="px-4 py-2 border-b text-gray-700">$99.99</td>
+                                        <td class="px-4 py-2 border-b text-gray-700">45</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Supplier J</td>
                                         <td class="px-4 py-2 border-b">
                                             <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
@@ -402,6 +422,7 @@
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Name</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Description</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Price</th>
+                                        <th class="px-4 py-2 border-b text-left text-white font-bold">Quantity</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Supplier</th>
                                         <th class="px-4 py-2 border-b text-left text-white font-bold">Actions</th>
                                     </tr>
@@ -412,6 +433,7 @@
                                         <td class="px-4 py-2 border-b text-gray-700">Elgato Stream Deck</td>
                                         <td class="px-4 py-2 border-b text-gray-700">15 Customizable Keys</td>
                                         <td class="px-4 py-2 border-b text-gray-700">$149.99</td>
+                                        <td class="px-4 py-2 border-b text-gray-700">5</td>
                                         <td class="px-4 py-2 border-b text-gray-700">Supplier K</td>
                                         <td class="px-4 py-2 border-b">
                                             <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
