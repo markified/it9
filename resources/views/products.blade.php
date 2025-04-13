@@ -65,19 +65,20 @@
                         <img src="{{ asset('images/logo.png') }}" class="w-32 h-auto">
                     </div>
                     <div class="mb-6">
-                        <ul class="flex space-x-4">
-                            <li><a href="#" class="text-white hover:underline" onclick="toggleCategory('processors')">Processors</a></li>
-                            <li><a href="#" class="text-white hover:underline" onclick="toggleCategory('graphics-cards')">Graphics Cards</a></li>
-                            <li><a href="#" class="text-white hover:underline" onclick="toggleCategory('storage')">Storage</a></li>
-                            <li><a href="#" class="text-white hover:underline" onclick="toggleCategory('motherboard')">Motherboard</a></li>
-                            <li><a href="#" class="text-white hover:underline" onclick="toggleCategory('ram')">RAM</a></li>
-                            <li><a href="#" class="text-white hover:underline" onclick="toggleCategory('power-supply')">Power Supply</a></li>
-                            <li><a href="#" class="text-white hover:underline" onclick="toggleCategory('fans')">Fans</a></li>
-                            <li><a href="#" class="text-white hover:underline" onclick="toggleCategory('monitors')">Monitors</a></li>
-                            <li><a href="#" class="text-white hover:underline" onclick="toggleCategory('case')">Case</a></li>
-                            <li><a href="#" class="text-white hover:underline" onclick="toggleCategory('mouse-keyboards')">Mouse and Keyboards</a></li>
-                            <li><a href="#" class="text-white hover:underline" onclick="toggleCategory('others')">Others</a></li>
-                        </ul>
+                        <select onchange="toggleCategory(this.value)" class="bg-gray-800 text-white px-4 py-2 rounded">
+                            <option value="" disabled selected>Select a Category</option>
+                            <option value="processors">Processors</option>
+                            <option value="graphics-cards">Graphics Cards</option>
+                            <option value="storage">Storage</option>
+                            <option value="motherboard">Motherboard</option>
+                            <option value="ram">RAM</option>
+                            <option value="power-supply">Power Supply</option>
+                            <option value="fans">Fans</option>
+                            <option value="monitors">Monitors</option>
+                            <option value="case">Case</option>
+                            <option value="mouse-keyboards">Mouse and Keyboards</option>
+                            <option value="others">Accessories</option>
+                        </select>
                     </div>
                     <div class="bg-white shadow-md rounded-lg p-6">
                         <div id="processors" class="category">
@@ -412,7 +413,7 @@
                         </div>
                         <div id="others" class="category hidden">
                             <div class="flex justify-between items-center mb-4">
-                                <h2 class="text-2xl font-bold text-gray-800">Others</h2>
+                                <h2 class="text-2xl font-bold text-gray-800">Accessories</h2>
                                 <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
                             </div>
                             <table class="min-w-full bg-white border border-gray-200">

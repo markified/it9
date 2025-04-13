@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+            background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
             color: #ffffff;
         }
         .card {
