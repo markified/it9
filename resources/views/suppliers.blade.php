@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+            background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
             color: #ffffff;
         }
         .card {
@@ -22,9 +22,6 @@
 </head>
 <body>
     <div class="h-screen p-6">
-        <div class="mb-6 text-center">
-            <img src="{{ asset('images/logo.png') }}" class="mx-auto w-32 h-auto">
-        </div>
 
         <!-- Sidebar and Main Content -->
         <div class="flex">
@@ -57,11 +54,15 @@
             <!-- Main Content -->
             <div class="flex-1 p-6">
                 <div class="container mx-auto py-10">
-                    <div class="text-center mb-10">
+                    <div class="flex justify-between items-end mb-10">
                         <h1 class="text-4xl font-bold text-white-800">Suppliers</h1>
+                        <img src="{{ asset('images/logo.png') }}" class=" w-32 h-auto">
                     </div>
                     <div class="bg-white shadow-md rounded-lg p-6">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Supplier List</h2>
+                        <div class="flex justify-between items-center mb-4">
+                            <h2 class="text-2xl font-bold text-gray-800">Supplier List</h2>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
+                        </div>
                         <table class="min-w-full bg-white border border-gray-200">
                             <thead class="table-header">
                                 <tr>

@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+            background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
             color: #ffffff;
         }
         .card {
@@ -28,9 +28,6 @@
 </head>
 <body>
     <div class="h-screen p-6">
-        <div class="mb-6 text-center">
-            <img src="{{ asset('images/logo.png') }}" class="mx-auto w-32 h-auto">
-        </div>
 
         <!-- Sidebar and Main Content -->
         <div class="flex">
@@ -63,8 +60,9 @@
             <!-- Main Content -->
             <div class="flex-1 p-6">
                 <div class="container mx-auto py-10">
-                    <div class="text-center mb-10">
+                    <div class="flex justify-between items-end mb-10">
                         <h1 class="text-4xl font-bold text-white-800">Computer Products</h1>
+                        <img src="{{ asset('images/logo.png') }}" class="w-32 h-auto">
                     </div>
                     <div class="mb-6">
                         <ul class="flex space-x-4">
@@ -83,7 +81,10 @@
                     </div>
                     <div class="bg-white shadow-md rounded-lg p-6">
                         <div id="processors" class="category">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Processors</h2>
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold text-gray-800">Processors</h2>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
+                            </div>
                             <table class="min-w-full bg-white border border-gray-200">
                                 <thead class="table-header">
                                     <tr>
@@ -111,7 +112,10 @@
                             </table>
                         </div>
                         <div id="graphics-cards" class="category hidden">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Graphics Cards</h2>
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold text-gray-800">Graphics Cards</h2>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
+                            </div>
                             <table class="min-w-full bg-white border border-gray-200">
                                 <thead class="table-header">
                                     <tr>
@@ -139,7 +143,10 @@
                             </table>
                         </div>
                         <div id="storage" class="category hidden">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Storage</h2>
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold text-gray-800">Storage</h2>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
+                            </div>
                             <table class="min-w-full bg-white border border-gray-200">
                                 <thead class="table-header">
                                     <tr>
@@ -167,7 +174,10 @@
                             </table>
                         </div>
                         <div id="motherboard" class="category hidden">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Motherboard</h2>
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold text-gray-800">Motherboard</h2>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
+                            </div>
                             <table class="min-w-full bg-white border border-gray-200">
                                 <thead class="table-header">
                                     <tr>
@@ -195,7 +205,10 @@
                             </table>
                         </div>
                         <div id="ram" class="category hidden">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4">RAM</h2>
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold text-gray-800">RAM</h2>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
+                            </div>
                             <table class="min-w-full bg-white border border-gray-200">
                                 <thead class="table-header">
                                     <tr>
@@ -223,7 +236,10 @@
                             </table>
                         </div>
                         <div id="power-supply" class="category hidden">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Power Supply</h2>
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold text-gray-800">Power Supply</h2>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
+                            </div>
                             <table class="min-w-full bg-white border border-gray-200">
                                 <thead class="table-header">
                                     <tr>
@@ -251,7 +267,10 @@
                             </table>
                         </div>
                         <div id="fans" class="category hidden">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Fans</h2>
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold text-gray-800">Fans</h2>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
+                            </div>
                             <table class="min-w-full bg-white border border-gray-200">
                                 <thead class="table-header">
                                     <tr>
@@ -279,7 +298,10 @@
                             </table>
                         </div>
                         <div id="monitors" class="category hidden">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Monitors</h2>
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold text-gray-800">Monitors</h2>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
+                            </div>
                             <table class="min-w-full bg-white border border-gray-200">
                                 <thead class="table-header">
                                     <tr>
@@ -307,7 +329,10 @@
                             </table>
                         </div>
                         <div id="case" class="category hidden">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Case</h2>
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold text-gray-800">Case</h2>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
+                            </div>
                             <table class="min-w-full bg-white border border-gray-200">
                                 <thead class="table-header">
                                     <tr>
@@ -335,7 +360,10 @@
                             </table>
                         </div>
                         <div id="mouse-keyboards" class="category hidden">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Mouse and Keyboards</h2>
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold text-gray-800">Mouse and Keyboards</h2>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
+                            </div>
                             <table class="min-w-full bg-white border border-gray-200">
                                 <thead class="table-header">
                                     <tr>
@@ -363,7 +391,10 @@
                             </table>
                         </div>
                         <div id="others" class="category hidden">
-                            <h2 class="text-2xl font-bold text-gray-800 mb-4">Others</h2>
+                            <div class="flex justify-between items-center mb-4">
+                                <h2 class="text-2xl font-bold text-gray-800">Others</h2>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add</button>
+                            </div>
                             <table class="min-w-full bg-white border border-gray-200">
                                 <thead class="table-header">
                                     <tr>
@@ -390,3 +421,10 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

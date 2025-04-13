@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+            background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
             color: #ffffff;
         }
         .card {
@@ -21,10 +21,7 @@
     </style>
 </head>
 <body>
-    <div class="h-screen p-6 ">
-        <div class="mb-6 text-center">
-            <img src="{{ asset('images/logo.png') }}" class="mx-auto w-32 h-auto">
-        </div>
+    <div class="h-screen p-6">
 
         <!-- Sidebar and Main Content -->
         <div class="flex">
@@ -56,9 +53,9 @@
 
             <!-- Main Content -->
             <div class="flex-1 p-6">
-                <div class="text-center mb-10">
+                <div class="flex justify-between items-end mb-10">
                     <h1 class="text-4xl font-bold">Low Stock Management</h1>
-                    <p class="text-gray-400 mt-2">Monitor and manage products with low stock levels.</p>
+                    <img src="{{ asset('images/logo.png') }}" class=" w-32 h-auto">
                 </div>
                 <div class="bg-white shadow-md rounded-lg p-6">
                     <h2 class="text-2xl font-bold text-gray-800 mb-4">Low Stock Products</h2>
@@ -68,6 +65,7 @@
                                 <th class="px-4 py-2 border-b text-left font-bold">ID</th>
                                 <th class="px-4 py-2 border-b text-left font-bold">Name</th>
                                 <th class="px-4 py-2 border-b text-left font-bold">Stock</th>
+                                <th class="px-4 py-2 border-b text-left font-bold">Stock Status</th>
                                 <th class="px-4 py-2 border-b text-left font-bold">Supplier</th>
                                 <th class="px-4 py-2 border-b text-left font-bold">Actions</th>
                             </tr>
@@ -77,6 +75,9 @@
                                 <td class="px-4 py-2 border-b text-gray-700">1</td>
                                 <td class="px-4 py-2 border-b text-gray-700">Intel Core i5</td>
                                 <td class="px-4 py-2 border-b text-gray-700">5</td>
+                                <td class="px-4 py-2 border-b text-gray-700">
+                                    <span class="bg-yellow-500 text-white px-2 py-1 rounded">Low</span>
+                                </td>
                                 <td class="px-4 py-2 border-b text-gray-700">Supplier A</td>
                                 <td class="px-4 py-2 border-b">
                                     <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Restock</button>
@@ -86,6 +87,9 @@
                                 <td class="px-4 py-2 border-b text-gray-700">2</td>
                                 <td class="px-4 py-2 border-b text-gray-700">Samsung 970 EVO</td>
                                 <td class="px-4 py-2 border-b text-gray-700">2</td>
+                                <td class="px-4 py-2 border-b text-gray-700">
+                                    <span class="bg-red-500 text-white px-2 py-1 rounded">Critical</span>
+                                </td>
                                 <td class="px-4 py-2 border-b text-gray-700">Supplier B</td>
                                 <td class="px-4 py-2 border-b">
                                     <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Restock</button>

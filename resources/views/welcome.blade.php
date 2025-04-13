@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
-            background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+            background: linear-gradient(to left, #0f2027, #203a43, #2c5364); /* Horizontal gradient */
             color: #ffffff;
         }
         .card {
@@ -22,13 +22,11 @@
 </head>
 <body>
     <div class="h-screen p-6">
-        <div class="mb-6 text-center">
-            <img src="{{ asset('images/logo.png') }}" class="mx-auto w-32 h-auto">
-        </div>
 
         <!-- Header -->
-        <div class="mb-6">
+        <div class="mb-6 flex justify-between items-center">
             <h1 class="text-3xl font-bold">Welcome</h1>
+            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-32 h-auto">
         </div>
 
         <!-- Statistics Cards -->
