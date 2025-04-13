@@ -6,6 +6,7 @@ use App\Http\Controllers\MonitoringController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\LowStockController;
+use App\Http\Controllers\PurchaseOrderController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -17,9 +18,7 @@ Route::get('/welcome', function () {
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
 Route::get('/suppliers', [SupplierController::class, 'index'])->name('suppliers.index');
 Route::get('/low-stock', [LowStockController::class, 'index'])->name('low-stock.index');
-Route::get('/purchase-orders', function () {
-    return view('purchase-orders');
-});
+Route::get('/purchase-orders', [PurchaseOrderController::class, 'index'])->name('purchase-orders.index');
 
 Route::get('/monitoring', function () {
     $bladeFiles = collect(File::allFiles(resource_path('views')))

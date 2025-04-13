@@ -22,7 +22,6 @@
 </head>
 <body>
     <div class="h-screen p-6">
-
         <!-- Sidebar and Main Content -->
         <div class="flex">
             <!-- Sidebar -->

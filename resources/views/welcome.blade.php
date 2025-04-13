@@ -30,7 +30,7 @@
         </div>
 
         <!-- Statistics Cards -->
-        <div class="grid grid-cols-4 gap-4 mb-6">
+        <div class="grid grid-cols-5 gap-4 mb-6">
             <div class="card p-4 rounded-lg text-center shadow">
                 <p class="text-lg font-bold">Total Users</p>
             </div>
@@ -42,6 +42,9 @@
             </a>
             <a href="{{ route('low-stock.index') }}" class="card p-4 rounded-lg text-center shadow block">
                 <p class="text-lg font-bold">Low Stock Items</p>
+            </a>
+            <a href="{{ route('purchase-orders.index') }}" class="card p-4 rounded-lg text-center shadow block">
+                <p class="text-lg font-bold">Purchase Orders</p>
             </a>
         </div>
 
